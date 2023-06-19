@@ -1,0 +1,31 @@
+{
+  "id": 1,
+  "name": "Funky Beats",
+  "keys": [
+    {
+      "id": 1,
+      "key": "a",
+      "soundPath": "@/assets/sounds/sound1.wav"
+    },
+    {
+      "id": 2,
+      "key": "s",
+      "soundPath": "@/assets/sounds/sound2.wav"
+    },
+    {
+      "id": 3,
+      "key": "d",
+      "soundPath": "@/assets/sounds/sound3.mp3"
+    },
+    {
+      "id": 4,
+      "key": "f",
+      "soundPath": "@/assets/sounds/sound4.mp3"
+    },
+    {
+      "id": 5,
+      "key": "g",
+      "soundPath": "@/assets/sounds/sound5.mp3"
+    }
+  ]
+}

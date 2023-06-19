@@ -6,6 +6,11 @@ export default {
   ],
   theme: {
     extend: {
+      colors:{
+        pastelGreen: '#C4DFDF',
+        pastelBlue: '#BEE1E6',
+        pastelPink: '#FDE2E4'
+      },
       fontFamily:{
         robot:['Roboto Mono', 'monospace']
       }
