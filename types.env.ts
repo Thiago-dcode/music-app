@@ -1,14 +1,14 @@
-export interface keys {
+export interface keySound {
     id: number,
-    key: string,
+    keyDown: string,
     soundPath: string
 }
 
 
-export interface keyBoard {
+export interface keyboard {
     id: number,
     name: string,
-    keys: keys[]
+    keys: keySound[]
     
 
 

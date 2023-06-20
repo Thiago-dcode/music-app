@@ -1,0 +1,44 @@
+{
+  "keyBoard": {
+    "id": 1,
+    "name": "Funky Beats",
+    "keys": [
+      {
+        "id": 1,
+        "keyDown": "a",
+        "soundPath": "/assets/sounds/sound1.wav"
+      },
+      {
+        "id": 2,
+        "keyDown": "s",
+        "soundPath": "/assets/sounds/sound2.wav"
+      },
+      {
+        "id": 3,
+        "keyDown": "d",
+        "soundPath": "/assets/sounds/sound3.mp3"
+      },
+      {
+        "id": 4,
+        "keyDown": "f",
+        "soundPath": "/assets/sounds/sound4.mp3"
+      },
+      {
+        "id": 5,
+        "keyDown": "g",
+        "soundPath": "/assets/sounds/sound5.mp3"
+      },
+      {
+        "id": 6,
+        "keyDown": "z",
+        "soundPath": "/assets/sounds/sound5.mp3"
+      },
+      {
+        "id": 7,
+        "keyDown": "x",
+        "soundPath": "/assets/sounds/sound5.mp3"
+      }
+
+    ]
+  }
+}

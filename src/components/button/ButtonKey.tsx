@@ -1,22 +1,40 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { keySound } from "types.env";
 
 interface buttonProps {
-  sound: string;
-  keyDown: string;
+  keySound: keySound;
 }
+export default function ButtonKey({ keySound }: buttonProps) {
+  const [sound, setSound] = useState("");
 
-export default function ButtonKey({ sound, keyDown }: buttonProps) {
-
+  useEffect(() => {
+    const getSound = async () => {
+      const soundPath = `../..${keySound.soundPath}`
+      const soundModule = await import(soundPath);
+      console.log(soundModule)
+      setSound(soundModule.default);
+    };
+    getSound();
+  }, []);
   const play = () => {
     new Audio(sound).play();
   };
   return (
-    <div  id={`div-${keyDown}`}
+    <div
+      id={`div-${keySound.keyDown}`}
       className={`even:bg-pastelPink odd:bg-pastelBlue button-key-div text-black w-[7rem] h-[7rem] flex flex-col justify-center rounded-sm`}
     >
-      <button id={keyDown} onClick={play} className=" font-bold text-3xl">
-        {keyDown.toUpperCase()}
-      </button>
+      {sound ? (
+        <button
+          id={keySound.keyDown}
+          onClick={play}
+          className=" font-bold text-3xl"
+        >
+          {keySound.keyDown.toUpperCase()}
+        </button>
+      ) : (
+        <h1>Loading</h1>
+      )}
     </div>
   );
 }
